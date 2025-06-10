@@ -1,10 +1,8 @@
 import Contact from "../components/Contact";
-import SideBar from "../components/SideBar";
 
 const ContactPage = () => {
   return (
-    <div className="flex w-full min-h-screen">
-      <SideBar />
+    <div className="w-full min-h-screen">
       <Contact />
     </div>
   );

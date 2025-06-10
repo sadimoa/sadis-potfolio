@@ -1,19 +1,26 @@
-import About from "../components/About";
-import Contact from "../components/Contact";
+import AboutNew from "../components/AboutNew";
+import ContactNew from "../components/ContactNew";
 import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import SideBar from "../components/SideBar";
+// import HeroSimple from "../components/HeroSimple";
+import ProjectsNew from "../components/ProjectsNew";
+import FloatingNav from "../components/FloatingNav";
 
 const HomePage = () => {
   return (
-    <div className="flex">
-      <SideBar />
-      <div className="flex flex-col gap-10">
+    <div className="w-full">
+      <FloatingNav />
+      <section id="home">
         <Hero />
-        <About />
-        <Projects />
-        <Contact />
-      </div>
+      </section>
+      <section id="about">
+        <AboutNew />
+      </section>
+      <section id="projects">
+        <ProjectsNew />
+      </section>
+      <section id="contact">
+        <ContactNew />
+      </section>
     </div>
   );
 };
